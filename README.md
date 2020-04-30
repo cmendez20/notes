@@ -2,4 +2,4 @@
 
 ### Frontend
 
-[CSS] (./topics/css.md)
+- [CSS](./topics/css.md)
