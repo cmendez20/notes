@@ -32,3 +32,75 @@ has a specificity of (0, 1, 2, 1). Therefore, the button's background color will
 - rely more on specificity than on the order of selectors
   - allows you to rearrange things in the future, thus, scalable 
 - But, rely on order when using 3rd-party stylesheets - always put your author stylesheet last. 
+
+##### padding
+
+the parent's width is always the reference for percentage-based calculations  
+
+length w/ em unites uses the current element for computed font-size, reference is current element. 
+
+##### CSS Value Processing: What You Need To Know
+
+- Browsers specify a root font-size for each page (usually 16px)
+- Percentages and relative values are always converted to pixels
+- Percentages are measured relative to their parent's font-size, if used to specify font-size
+- Percentages are measured relative to their parent's width, if used to specify lengths
+- em are measured relative to their parent font-size, if used to specify font-size
+- em are measured relative to current font-size, if used to specify lengths 
+- rem are always measured relative to the document's root for *font-size*
+- vh and vw are simply percentage measurements of the viewport's *height* and *width*
+
+##### Inheritance: What You Need To Know
+
+- inheritance passes the values for some specific properties from parents to children - more maintainable code
+- properties related to text are inherited: *font-family*, *color*, etc.
+- the computed value of a property is what gets inherited, not the declared value
+- Inheritance of a property only works if no one declares a value for that property
+- The *inherit* keyword forces inheritance on a certain property
+- The *initial* keyword resets a property to its initial value
+
+##### The Box Model
+
+- Content: text, images, etc.
+- Padding: transparent area around the content, inside of the box
+- Border: goes around the padding and the content
+- Margin: space between boxes;
+- Fill Area: area that gets filled with background color or background image
+
+##### The Box Model: Heights and Widths
+
+**total width** = right border + right padding + specified width + left padding + left border
+
+**total height** = top border + top padding + specified height + bottom padding + bottom border 
+
+**example**: height = 0 + 20px + 100px + 20px + 0 = 140px
+
+Box-sizing: border-box fixes this by just going by our specified height/width.
+
+##### Think, Build, Architect
+
+- Think
+  - Layout, Atomic Design
+- Build
+  - BEM
+- Architect
+  - The 7-1 Pattern
+  - 7 different folders for partial Sass files, and 1 main Sass file to import all other files into a compiled CSS stylesheet. 
+    - **base/** (where we put the basic product definitions)
+    - **components/** (where we have one file for each component)
+    - **layouts/** (where we define the overall layout of the project)
+    - **pages/** (where we have styles for specific pages of the project)
+    - **themes/** (if you want to implement different visual themes)
+    - **abstracts/** (where we put code that doesn't output any CSS, such as variables or mix-ins)
+    - **vendors/** (where all third-party CSS goes)
+
+##### BEM: Building with Meaningful Class Names
+
+- Block Element Modifier
+  - .block {}
+  - .block__element {}
+  - .block__element--modifier {}
+- **BLOCK:** standalone component that is meaningful on its own. (btn)
+- **ELEMENT:** part of a block that has no standalone meaning. (btn-description)
+- **MODIFIER:** a different version of a block or an element. (btn-round)
+
