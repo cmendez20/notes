@@ -1,6 +1,6 @@
 # Selectors 
 
-##### Selector specificity 
+### Selector specificity  
 
 (Inline, IDs, Classes, Elements)
 
@@ -24,7 +24,7 @@ has a specificity of (0, 1, 2, 2)
 
 has a specificity of (0, 1, 2, 1). Therefore, the button's background color will be green since it wins out at the elements specificity. 
 
-##### Reminders
+### Reminders
 
 - a selector that contains 1 ID is more specific than one with 1000 classes
 - a selector that contains 1 class is more specific than one with 1000 elements
@@ -39,7 +39,7 @@ the parent's width is always the reference for percentage-based calculations
 
 length w/ em unites uses the current element for computed font-size, reference is current element. 
 
-##### CSS Value Processing: What You Need To Know
+### CSS Value Processing: What You Need To Know
 
 - Browsers specify a root font-size for each page (usually 16px)
 - Percentages and relative values are always converted to pixels
@@ -50,7 +50,7 @@ length w/ em unites uses the current element for computed font-size, reference i
 - rem are always measured relative to the document's root for *font-size*
 - vh and vw are simply percentage measurements of the viewport's *height* and *width*
 
-##### Inheritance: What You Need To Know
+### Inheritance: What You Need To Know
 
 - inheritance passes the values for some specific properties from parents to children - more maintainable code
 - properties related to text are inherited: *font-family*, *color*, etc.
@@ -59,7 +59,7 @@ length w/ em unites uses the current element for computed font-size, reference i
 - The *inherit* keyword forces inheritance on a certain property
 - The *initial* keyword resets a property to its initial value
 
-##### The Box Model
+### The Box Model
 
 - Content: text, images, etc.
 - Padding: transparent area around the content, inside of the box
@@ -67,7 +67,7 @@ length w/ em unites uses the current element for computed font-size, reference i
 - Margin: space between boxes;
 - Fill Area: area that gets filled with background color or background image
 
-##### The Box Model: Heights and Widths
+### The Box Model: Heights and Widths
 
 **total width** = right border + right padding + specified width + left padding + left border
 
@@ -77,7 +77,7 @@ length w/ em unites uses the current element for computed font-size, reference i
 
 Box-sizing: border-box fixes this by just going by our specified height/width.
 
-##### Think, Build, Architect
+### Think, Build, Architect
 
 - Think
   - Layout, Atomic Design
@@ -94,7 +94,7 @@ Box-sizing: border-box fixes this by just going by our specified height/width.
     - **abstracts/** (where we put code that doesn't output any CSS, such as variables or mix-ins)
     - **vendors/** (where all third-party CSS goes)
 
-##### BEM: Building with Meaningful Class Names
+### BEM: Building with Meaningful Class Names
 
 - Block Element Modifier
   - .block {}
@@ -103,4 +103,30 @@ Box-sizing: border-box fixes this by just going by our specified height/width.
 - **BLOCK:** standalone component that is meaningful on its own. (btn)
 - **ELEMENT:** part of a block that has no standalone meaning. (btn-description)
 - **MODIFIER:** a different version of a block or an element. (btn-round)
+
+### Node & NPM
+
+- npm init
+- npm install node-sass --save-dev
+  - in order to save it as a development dependency here in our package .json file. Which means that it's a development tool that will just help us in building our project. 
+  - We save it in the package.json file so that we can share our project without sharing the entire node modules
+    - then if someone receives the json and does `npm install`, they can download all the necessary files to run our project. 
+
+### SASS (SCSS)
+
+- I will be using SCSS which stands for Sassy CSS, slight different syntax than SASS
+- - variables: `$primary-color: #ddd;`
+  - mix-ins
+  - extends
+- SCSS file extension
+  - to write SCSS, Sassy CSS, you must use .scss files extensions, not SASS
+  - **easy to convert CSS to SCSS because valid CSS is valid SCSS.**
+- Compiling SASS
+  - to compile sass, add a script to your package.json file.
+  - the script looks something like this:
+    - `"compile:sass": "node-sass sass/main.scss css/styles.css"`
+    - then, run `npm run compile:sass` in your terminal and watch the magic unfold.
+    - to explain the script a little bit, the second path is the location to your sass file, and the last is where you want the compile sass to output to.
+  - to install live-server: only have to do it once, to run it just type `live-server` in the project home folder terminal. 
+    - npm install live-server -g
 
