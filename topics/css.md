@@ -150,3 +150,38 @@ Box-sizing: border-box fixes this by just going by our specified height/width.
 - Flexbox 
 - CSS Grid
 
+### Flexbox
+
+- The main idea behind flexbox is to give the container the ability to expand and to shrink elements to elements to best use all the available space
+- Flexbox replaces float layouts, using less, and more readable and logical code
+- Flexbox completely changes the way that we build one-dimensional layouts 
+
+#### Main Flexbox Concepts
+
+- the element that we use flexbox on is called the flex container 
+- all the direct children in a flex container are called flex items
+- the direction the flex items are laid out across is called the main axis (going across)
+- perpendicular to that is called the cross axis (going down)
+
+#### Flexbox Properties Overview
+
+- **Container**
+  - **bold items is default value**
+  - flex-direction: **row** | row-reverse | column | column-reverse 
+  - flex-wrap: **nowrap** | wrap | wrap-reverse 
+  - justify-content (main-axis): **flex-start** | flex-end | center | space-between | space-around | space-evenly 
+  - align-items (cross-axis): **stretch** | flex-start | flex-end | center | baseline
+  - align-content: **stretch** | flex-start | flex-end | center | space-between | space-around
+    - only applies when there is more than one row of flex items
+    - controls how the rows are align along the cross axis if there is some empty space
+- **Item**
+  - align-self: similar to align-items, but for one individual flex item 
+  - order: defines the order in which one specific flex item should appear
+  - flex-grow: how much an item can grow
+  - flex-shrink: how much it can shrink
+  - flex-basis : it's basically the width property for flex-items
+  - flex-shrink: 1 (The flex-item is allowed to shrink as the viewport shrinks)
+  - flex-shrink: 0 (The flex-item is not allowed to shrink down. )
+  - flex-grow: 1 (allows element to take up as much space as it can)
+  - flex-grow: 0 (does not allow element to grow)
+  - flex: 
