@@ -184,4 +184,4 @@ Box-sizing: border-box fixes this by just going by our specified height/width.
   - flex-shrink: 0 (The flex-item is not allowed to shrink down. )
   - flex-grow: 1 (allows element to take up as much space as it can)
   - flex-grow: 0 (does not allow element to grow)
-  - flex: 
+  - flex: flex-grow flex-shrink flex-basis
