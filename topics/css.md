@@ -185,3 +185,11 @@ Box-sizing: border-box fixes this by just going by our specified height/width.
   - flex-grow: 1 (allows element to take up as much space as it can)
   - flex-grow: 0 (does not allow element to grow)
   - flex: flex-grow flex-shrink flex-basis
+
+### CSS Grid
+
+- CSS Grid replaces float layouts, using less, and more readable and logical CSS and HTML
+- CSS Grid works perfectly together with Flexbox, which is best to handle one-dimensional components and layouts 
+- CSS Grid completely changes the way that we envision and build two-dimensional layouts 
+
+[CSS Grid Properties Overview](../imgs/css/css-grid-overview.png)
