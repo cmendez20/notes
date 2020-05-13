@@ -186,6 +186,7 @@ Box-sizing: border-box fixes this by just going by our specified height/width.
   - flex-grow: 0 (does not allow element to grow)
   - flex: flex-grow flex-shrink flex-basis
 
+<<<<<<< HEAD
 ### CSS Grid
 
 - CSS Grid replaces float layouts, using less, and more readable and logical CSS and HTML
@@ -193,3 +194,10 @@ Box-sizing: border-box fixes this by just going by our specified height/width.
 - CSS Grid completely changes the way that we envision and build two-dimensional layouts 
 
 [CSS Grid Properties Overview](../imgs/css/css-grid-overview.png)
+=======
+### Responsive Images
+
+- To make responsive images, format the img element. 
+  - always declare a width and height in percentages so that the image is fluid.
+  - image should be displayed as block, so that there is no small space beneath image.
+>>>>>>> afc8691846ac512b238b9686ab7299b85409c3d4
