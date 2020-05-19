@@ -199,3 +199,8 @@ Box-sizing: border-box fixes this by just going by our specified height/width.
 - CSS Grid completely changes the way that we envision and build two-dimensional layouts 
 
 ![CSS Grid Properties Overview](../imgs/css/css-grid-overview.png)
+
+### THE CALC FUNCTION TO THE RESCUE 
+
+- use calc(100vh - whatever height of navbar to make a complete 100vh experience for landing page.
+- ex: calc (100vh - 6 rem)
