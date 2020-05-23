@@ -14,7 +14,7 @@ Worked on the personal portfolio project for freeCodeCamp quite a bit today. Bui
 
 Today, I finished freeCodeCamp's Responsive Web Design curriculum and received a certificate of completion. 
 
-(../img/fcc/freeCodeCamp_responsive_web_design_certificate_2020-05-22.png)
+![freeCodeCamp responsive web design certificate](../img/fcc/freeCodeCamp_responsive_web_design_certificate_2020-05-22.png)
 
 I first started freeCodeCamp on February 28, 2019 and almost one year later, I finally finished their responsive web design portion. However, I know that this past year, I haven't been diligent at all in learning front-end web development. I was always interested in front-end web development, but I never start learning about it because I was afraid to start. There are just so many technologies and paths out there about this career field, so I was intimated and scared about just starting. Then, in my junior year of college, I took a course titled "Intro to Coding for Journalists." It was an awesome course and it was what I needed to ignite my spark, my motivation to self-learn front-end web development. 
 
