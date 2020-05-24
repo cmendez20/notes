@@ -22,5 +22,7 @@ So yeah, around the time I was taking this course in college, I started freeCode
 
 It's been a long road, but my front-end web development career is only just starting. Tomorow, I finally start learning and messing around with JavaScript. Am I nervous? For sure. Am I excited to get started? You bet. 
 
+### Day 4: May 23, 2020
 
+I graduated from UT Austin today, virtually of course. Anyways, I updated my portfolio website today with the template. It's looking pretty good actually, very mobile-responsive too. Finally, I started Wes Bos Beginner JavaScript course. Let's see how it goes. (P.S. I uninstalled pop os and moved back to windows on my main laptop)
 
