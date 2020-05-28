@@ -26,3 +26,8 @@ It's been a long road, but my front-end web development career is only just star
 
 I graduated from UT Austin today, virtually of course. Anyways, I updated my portfolio website today with the template. It's looking pretty good actually, very mobile-responsive too. Finally, I started Wes Bos Beginner JavaScript course. Let's see how it goes. (P.S. I uninstalled pop os and moved back to windows on my main laptop)
 
+### Day 4: May 27, 2020
+
+Haven't updated my progress in a while. I can assure you that I did code these past few days, but I never wrote about my progress and that's something that I want to improve upon. I feel that writing down my progress is important because then I can look back and see how far I've come and what I've done so far. For instance, I look back these few days and try to remember what exactly I did, but I just can't remember. I believe that I tutorial-hopped between different JavaScript courses such as Andrew Mead's Modern JS Bootcamp, Wes Bos JS for Beginners, and even purchased a new course on Udemy from Colt Steele! Realizing that I was getting nowhere, I refunded the udemy course, and stuck to the JS curriculum on freeCodeCamp. Currently, I am learning basic JavaScript syntax. I started this section yesterday and went through a good 80% of the curriculum. Tomorrow, I hope to finish the section and start the ES6 portion of the JavaScript curriculum. 
+
+### Day 5: May 28, 2020
