@@ -33,3 +33,7 @@ Haven't updated my progress in a while. I can assure you that I did code these p
 ### Day 5: May 28, 2020
 
 Almost finished the basic JavaScript syntax section on freeCodeCamp (99/100). **NEWSFLASH**: Learning JavaScript is hard! One of the curriculum's practice exercises took me the better half of today to complete. It was very confusing, but I thought through the brief and eventually was able to solve it without help. Then, I googled the problem and watched how others solved it on YouTube. One guy was able to solve it in way less lines of code than me, but that's great because I was able to learn from his code-along. Now, I'm stuck at a recursion problem which I'll tackle tomorrow or maybe later tonight. Not feeling so good now that the difficulty has ramped up. I keep thinking, 'maybe I'm not cut out for this." Regardless, I'm going to keep pushing, learning, and practicing. That's the only way I'm going to get good and hopefully break through this imposter syndrome. After all, I know that my career goal is to land a job as a front-end web developer. Going to take a break for now.
+
+### Day 6: May 29, 2020
+
+Wow, on my last challenge for freeCodeCamp's Basic JavaScript curriculum. It's been a crazy journey, but the difficulty in their challenges for learning JavaScript has been ramping up! So far, I'm stuck on recursion. Almost done, going to review a video on YouTube about recursion and tackle the challenge tomorrow. Tomorrow, I will finish this section and move on to learning ES6. 

@@ -3,6 +3,7 @@
 ### Frontend
 
 - [CSS](./topics/css.md)
+- [JavaScript](./topics/javascript.md)
 
 ### Journal
 
