@@ -37,3 +37,7 @@ Almost finished the basic JavaScript syntax section on freeCodeCamp (99/100). **
 ### Day 6: May 29, 2020
 
 Wow, on my last challenge for freeCodeCamp's Basic JavaScript curriculum. It's been a crazy journey, but the difficulty in their challenges for learning JavaScript has been ramping up! So far, I'm stuck on recursion. Almost done, going to review a video on YouTube about recursion and tackle the challenge tomorrow. Tomorrow, I will finish this section and move on to learning ES6. 
+
+### Day 7: May 30, 2020
+
+Today, I finished JavaScript basics on freeCodeCamp. I was a bit disappointed because I was able to do the whole section without looking up the answer (ok, I did look up hints for recursion, but that's because recursion!), but I just couldn't wrap my head around the last challenge. Now, I'm learning ES6 and I'm on 16/31, basically 50% of the way. Going to continue my progress tomorrow. 
