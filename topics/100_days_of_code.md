@@ -46,3 +46,6 @@ Today, I finished JavaScript basics on freeCodeCamp. I was a bit disappointed be
 
 Today, I finished the ES6 section of freeCodeCamp's JavaScript section. It wasn't so bad, but there are some things that I need to review, such as destructuring, modules, promises, and many more abstract terms. But, I'm making progress and tomorrow I began their regular expressions curriculum which I'm pretty nervous about... Last Day of May!!
 
+### Day 10: June 1, 2020
+
+Finished regular expressions section of JavaScript. It was very confusing, but I learned how powerful regex can be to help parse data and strings. Tomorrow, I start to learn about debugging, and hopefully, start the data structures section of FCC. 
