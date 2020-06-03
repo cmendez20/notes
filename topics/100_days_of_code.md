@@ -49,3 +49,7 @@ Today, I finished the ES6 section of freeCodeCamp's JavaScript section. It wasn'
 ### Day 10: June 1, 2020
 
 Finished regular expressions section of JavaScript. It was very confusing, but I learned how powerful regex can be to help parse data and strings. Tomorrow, I start to learn about debugging, and hopefully, start the data structures section of FCC. 
+
+### Day 11: June 2, 2020
+
+Finished the JavaScript debugging & data structures sections of freeCodeCamp. A lot of the stuff in the sections we learned in previous sections, like adding, deleting, and modifying arrays, objects, and utilizing console.log to find bugs and errors (which I use all the time when my code doesn't work the way I want it to!). Now, I'm working through their algorithm section. I've only started, but it's tough and I feel that this is going to take a lot longer than a full day to get through. We shall see what progress I make tomorrow. 
