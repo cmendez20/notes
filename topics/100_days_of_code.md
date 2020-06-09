@@ -53,3 +53,34 @@ Finished regular expressions section of JavaScript. It was very confusing, but I
 ### Day 11: June 2, 2020
 
 Finished the JavaScript debugging & data structures sections of freeCodeCamp. A lot of the stuff in the sections we learned in previous sections, like adding, deleting, and modifying arrays, objects, and utilizing console.log to find bugs and errors (which I use all the time when my code doesn't work the way I want it to!). Now, I'm working through their algorithm section. I've only started, but it's tough and I feel that this is going to take a lot longer than a full day to get through. We shall see what progress I make tomorrow. 
+
+### Day 12: June 9, 2020
+
+Took a little break from freeCodeCamp and am now working on Net Ninja's Udemy JavaScript course. Just finished his Object literal section where I learned about objects and how objects have properties that consist of keys and values. I also learned about primitive and reference types. A primitive type, such as numbers, strings, and Booleans are stored on the stack. If one primitive type is declared as the same value as another primitive, then one change to one will not affect the other. For instance: 
+
+```javascript
+let scoreOne = 100;
+let scoreTwo = scoreOne;
+
+scoreOne = 50;
+// scoreOne = 50, scoreTwo stays unchanged at 100
+```
+
+References, however, are placed on the heap and store pointers on the stack. So it can have two variables on the stack, but if the object on the heap changes, so do the two variables. This is different than how primitives work. 
+
+```js
+const objectOne = { name: Chris, location: Texas};
+const objectTwo = objectOne;
+// If I change objectOne properties, then objectTwo changes as well. 
+```
+
+That's all for today. Tomorrow, I'll start Net Ninja's Dom Manipulation section. Until next time.
+
+
+
+
+
+
+
+
+
