@@ -76,7 +76,19 @@ const objectTwo = objectOne;
 
 That's all for today. Tomorrow, I'll start Net Ninja's Dom Manipulation section. Until next time.
 
+### Day 13: June 10, 2020
 
+Worked through The Net Ninja's JavaScript Course again. Today, I worked on the DOM Manipulation, specifically, how to interact with elements through the DOM using `document.querySelector` & `document.querySelectorAll`.
+
+Using query selectors, we can change elements attributes, place styles on elements, and even remove, add, and create elements to the HTML page. Furthermore, I learned some basic info about events. Essentially, we can add `addEventListener` methods to an element to do even more things with it. For instance, when a user `clicks` on an item, the event listener can wait to listen for that click and then add some JavaScript to make it disappear, or add some strikethrough with some CSS styling! It's pretty versatile and actually, really neat.
+
+Finally, I think the biggest realization I had from this study session was learning about using the power of CSS selectors in `document.querySelector` selections. For instance, if I wanted to grab all the direct children of an article tag, then I'd just do: 
+
+```
+querySelectorAll('article > *');
+```
+
+It's that simple! The above will return a nodelist of the selected elements that are direct siblings of the article tag. Cool!
 
 
 
