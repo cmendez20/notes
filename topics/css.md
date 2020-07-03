@@ -204,3 +204,107 @@ Box-sizing: border-box fixes this by just going by our specified height/width.
 
 - use calc(100vh - whatever height of navbar to make a complete 100vh experience for landing page.
 - ex: calc (100vh - 6 rem)
+
+### Consistent Margins with Type
+
+- for consistency, often we "turn off" the margin-top on typography related elements.
+- That way we can use padding on the parent, and know the exact spacing that we'll have, and can keep all sides consistent.
+
+### In-line & Block elements
+
+#### Block Elements
+
+Block level elements will create a new line of content, stacking on top of each other by default.
+
+default width: 100%
+
+default height: 0, but will grow to the height according to the content in them.
+
+- paragraphs
+- headings
+- lists and list items
+- div
+- header
+- footer
+- main
+- section
+- etc.
+
+#### Inline elements
+
+Inline elements stay within the flow of what's around them.
+
+- links
+- strong
+- em
+- span
+- Images (sort of)
+
+There are some important things to know about inline elements:
+
+- you can only nest other inline elements in them (such as putting a link inside a strong element) (you cannot put a div inside a span element)
+- They will only respect margin, padding, and borders which are placed on the left or the right side, and not the top and bottom.
+  - you CANNOT set a width or a height on an inline element
+
+### The Span Element
+
+There is a very useful inline element, called a span
+
+- the span element is like strong and em, in that we use it to style text, but it has no default styling and no semantic meaning
+- a span by itself is a little useless, normally we use a class on them to make it easy to target with class
+
+### Styling Links
+
+Links have different "states" that we can style as well
+
+- default "link" state
+
+  `a { color: yellow;}`
+
+- Visited Links
+- Focus (navigating a website by keyboard)
+- Hover
+- Active (the style while you're actively clicking on the link)
+
+We can target these different states by using something called a pseudo-class
+
+- a: link
+- a:visited
+- etc. 
+
+Important to note specificity of a:psudo classes selectors. For instance, an active pseudo class will not work if above a:link. 
+
+```
+a:link,
+a:visited {
+  color: #FFE600;
+}
+
+a:focus {
+  color: aquamarine;
+}
+
+a:hover {
+  color: firebrick;
+}
+
+a:active {
+  color: plum;
+}
+```
+
+**if you do**
+
+`a:hover { color: aqua; }`
+
+**it controls all of your link states**
+
+Finally, make sure to always include styles for :focus, it can be added to the hover pseudo class.
+
+### Inline-block
+
+Sometimes we need something which can stay inline, but which we can set margins and padding on.
+
+`display: inline-block`
+
+Mostly used for buttons.
