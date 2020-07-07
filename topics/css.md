@@ -308,3 +308,57 @@ Sometimes we need something which can stay inline, but which we can set margins 
 `display: inline-block`
 
 Mostly used for buttons.
+
+### CSS Units
+
+#### Absolute 
+
+- pixels 
+
+#### Percentages 
+
+- When using percentages, that percentage is always relative to its parent. 
+  - A lot of the time, that parent is going to default to 100%
+
+- responsive images: 
+
+  `set width to 100%`
+
+### Max & Min Width
+
+- max-width
+  - set to keep container size at a set size while on big screens, but allows the content to shrink in smaller screens
+- min-width
+  - minimum width were the container will never shrink below the smallest size
+- max/min width are different values than width
+
+### How to decide which CSS unit to use
+
+General rule of thumb:
+
+- Font-size = rem
+- padding and margin = em
+- Widths = em or percentage
+
+### Media Queries
+
+- Media queries let us add new styles that target only specific conditions
+
+`@media media-type and (media-features) {...}`
+
+- The media-type let's us target different types of media
+  - Screen `@media screen {...}`
+  - Print `@media print {...}`
+  - Speech `@media speech {...}`
+
+- The media condition let's us target specific conditions within that media type
+  - Widths `@media (min-width: 600px) {...}`
+  - Orientation `@media (orientation: landscape) {...}`
+  - Specific features `@media (hover) {...}`
+-  Both media types and conditions are optional
+- We do need to either have a type or condition though
+- For example, we can target only screens
+  - `@media screen {...}`
+-  You can combine a type with a condition by using and:
+  - `@media screen and (min-width: 960px) {...}`
+
