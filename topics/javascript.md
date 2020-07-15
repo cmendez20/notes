@@ -30,3 +30,7 @@ function findGreater(a, b) {
   return a > b ? "a is greater" : "b is greater";
 }
 ```
+
+### Closures
+
+Closures are the ability for an inner function to access variables from a higher level scope even after the functions have been called or closed over. 
