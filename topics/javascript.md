@@ -34,3 +34,14 @@ function findGreater(a, b) {
 ### Closures
 
 Closures are the ability for an inner function to access variables from a higher level scope even after the functions have been called or closed over. 
+
+### Event Listeners
+
+> Go get something, listen for something, then go do something.
+
+```js
+btn.addEventListener('click', function() {
+   console.log('IT GOT CLICKED!!!'); 
+});
+```
+
