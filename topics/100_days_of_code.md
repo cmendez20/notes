@@ -90,8 +90,6 @@ querySelectorAll('article > *');
 
 It's that simple! The above will return a nodelist of the selected elements that are direct siblings of the article tag. Cool!
 
-# test
-
 
 
 
