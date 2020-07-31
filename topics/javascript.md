@@ -81,3 +81,23 @@ const person2 = {
 // use the spread operator - it spreads (like a knife) the contents from the person1 object into the new person3 object
 const person3 = { ...person1 };
 ```
+
+### Functional Programming
+
+Two distinct principles for functional programming: 
+
+1) Don't alter a variable or object - create new variables and objects and return them if need be from a function.
+
+2) Declare function arguments - any computation inside a function  depends only on the arguments, and not on any global object or variable.
+
+### Arrays 
+
+- Some methods will mutate (modify) the original array and others will leave the original array intact. 
+- anytime you want to use a mutation method and NOT mutate the original array, we need to take a copy of the array using the spread operator
+
+```javascript
+const numbersReversed = [...numbers].reverse();
+```
+
+- **slice()** *does not* mutate the original array
+- **splice()** *will* mutate the original array
