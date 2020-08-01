@@ -101,3 +101,11 @@ const numbersReversed = [...numbers].reverse();
 
 - **slice()** *does not* mutate the original array
 - **splice()** *will* mutate the original array
+
+Using an arrow function shorthand and want to return an object literal? Remember to wrap your object literal in parenthesis! 
+
+```javascript
+const ratings = watchList.map(movie => ({title: movie.Title, rating: movie.imdbRating}));
+```
+
+If you don't include parenthesis, then JavaScript looks at the brackets and thinks you're just using a regular function block.
