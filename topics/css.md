@@ -1,6 +1,6 @@
 # Selectors 
 
-### Selector specificity  
+## Selector specificity  
 
 (Inline, IDs, Classes, Elements)
 
@@ -24,7 +24,7 @@ has a specificity of (0, 1, 2, 2)
 
 has a specificity of (0, 1, 2, 1). Therefore, the button's background color will be green since it wins out at the elements specificity. 
 
-### Reminders
+## Reminders
 
 - a selector that contains 1 ID is more specific than one with 1000 classes
 - a selector that contains 1 class is more specific than one with 1000 elements
@@ -318,8 +318,9 @@ Mostly used for buttons.
 #### Percentages 
 
 - When using percentages, that percentage is always relative to its parent. 
-  - A lot of the time, that parent is going to default to 100%
-
+  
+- A lot of the time, that parent is going to default to 100%
+  
 - responsive images: 
 
   `set width to 100%`
