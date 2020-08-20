@@ -33,13 +33,13 @@ has a specificity of (0, 1, 2, 1). Therefore, the button's background color will
   - allows you to rearrange things in the future, thus, scalable 
 - But, rely on order when using 3rd-party stylesheets - always put your author stylesheet last. 
 
-##### padding
+## Padding
 
 the parent's width is always the reference for percentage-based calculations  
 
 length w/ em unites uses the current element for computed font-size, reference is current element. 
 
-### CSS Value Processing: What You Need To Know
+## CSS Value Processing: What You Need To Know
 
 - Browsers specify a root font-size for each page (usually 16px)
 - Percentages and relative values are always converted to pixels
@@ -50,7 +50,7 @@ length w/ em unites uses the current element for computed font-size, reference i
 - rem are always measured relative to the document's root for *font-size*
 - vh and vw are simply percentage measurements of the viewport's *height* and *width*
 
-### Inheritance: What You Need To Know
+## Inheritance: What You Need To Know
 
 - inheritance passes the values for some specific properties from parents to children - more maintainable code
 - properties related to text are inherited: *font-family*, *color*, etc.
@@ -59,7 +59,7 @@ length w/ em unites uses the current element for computed font-size, reference i
 - The *inherit* keyword forces inheritance on a certain property
 - The *initial* keyword resets a property to its initial value
 
-### The Box Model
+## The Box Model
 
 - Content: text, images, etc.
 - Padding: transparent area around the content, inside of the box
@@ -67,7 +67,7 @@ length w/ em unites uses the current element for computed font-size, reference i
 - Margin: space between boxes;
 - Fill Area: area that gets filled with background color or background image
 
-### The Box Model: Heights and Widths
+## The Box Model: Heights and Widths
 
 **total width** = right border + right padding + specified width + left padding + left border
 
@@ -77,7 +77,7 @@ length w/ em unites uses the current element for computed font-size, reference i
 
 Box-sizing: border-box fixes this by just going by our specified height/width.
 
-### Think, Build, Architect
+## Think, Build, Architect
 
 - Think
   - Layout, Atomic Design
@@ -94,7 +94,7 @@ Box-sizing: border-box fixes this by just going by our specified height/width.
     - **abstracts/** (where we put code that doesn't output any CSS, such as variables or mix-ins)
     - **vendors/** (where all third-party CSS goes)
 
-### BEM: Building with Meaningful Class Names
+## BEM: Building with Meaningful Class Names
 
 - Block Element Modifier
   - .block {}
@@ -104,7 +104,7 @@ Box-sizing: border-box fixes this by just going by our specified height/width.
 - **ELEMENT:** part of a block that has no standalone meaning. (btn-description)
 - **MODIFIER:** a different version of a block or an element. (btn-round)
 
-### Node & NPM
+## Node & NPM
 
 - npm init
 - npm install node-sass --save-dev
@@ -112,7 +112,7 @@ Box-sizing: border-box fixes this by just going by our specified height/width.
   - We save it in the package.json file so that we can share our project without sharing the entire node modules
     - then if someone receives the json and does `npm install`, they can download all the necessary files to run our project. 
 
-### SASS (SCSS)
+## SASS (SCSS)
 
 - I will be using SCSS which stands for Sassy CSS, slight different syntax than SASS
 - - variables: `$primary-color: #ddd;`
@@ -130,7 +130,7 @@ Box-sizing: border-box fixes this by just going by our specified height/width.
   - to install live-server: only have to do it once, to run it just type `live-server` in the project home folder terminal. 
     - npm install live-server -g
 
-### REVIEW: Basic Responsive Design Principles
+## REVIEW: Basic Responsive Design Principles
 
 1. Fluid Grids and Layouts
 
@@ -144,26 +144,26 @@ Box-sizing: border-box fixes this by just going by our specified height/width.
 
    To change styles on certain viewpoint widths
 
-### Layout Types
+## Layout Types
 
 - Float Layouts 
 - Flexbox 
 - CSS Grid
 
-### Flexbox
+## Flexbox
 
 - The main idea behind flexbox is to give the container the ability to expand and to shrink elements to elements to best use all the available space
 - Flexbox replaces float layouts, using less, and more readable and logical code
 - Flexbox completely changes the way that we build one-dimensional layouts 
 
-#### Main Flexbox Concepts
+## Main Flexbox Concepts
 
 - the element that we use flexbox on is called the flex container 
 - all the direct children in a flex container are called flex items
 - the direction the flex items are laid out across is called the main axis (going across)
 - perpendicular to that is called the cross axis (going down)
 
-#### Flexbox Properties Overview
+## Flexbox Properties Overview
 
 - **Container**
   - **bold items is default value**
@@ -186,13 +186,13 @@ Box-sizing: border-box fixes this by just going by our specified height/width.
   - flex-grow: 0 (does not allow element to grow)
   - flex: flex-grow flex-shrink flex-basis
 
-### Responsive Images
+## Responsive Images
 
 - To make responsive images, format the img element. 
   - always declare a width and height in percentages so that the image is fluid.
   - image should be displayed as block, so that there is no small space beneath image.
 
-### CSS Grid
+## CSS Grid
 
 - CSS Grid replaces float layouts, using less, and more readable and logical CSS and HTML
 - CSS Grid works perfectly together with Flexbox, which is best to handle one-dimensional components and layouts 
@@ -200,17 +200,17 @@ Box-sizing: border-box fixes this by just going by our specified height/width.
 
 ![CSS Grid Properties Overview](../imgs/css/css-grid-overview.png)
 
-### THE CALC FUNCTION TO THE RESCUE 
+## THE CALC FUNCTION TO THE RESCUE 
 
 - use calc(100vh - whatever height of navbar to make a complete 100vh experience for landing page.
 - ex: calc (100vh - 6 rem)
 
-### Consistent Margins with Type
+## Consistent Margins with Type
 
 - for consistency, often we "turn off" the margin-top on typography related elements.
 - That way we can use padding on the parent, and know the exact spacing that we'll have, and can keep all sides consistent.
 
-### In-line & Block elements
+## In-line & Block elements
 
 #### Block Elements
 
@@ -246,14 +246,14 @@ There are some important things to know about inline elements:
 - They will only respect margin, padding, and borders which are placed on the left or the right side, and not the top and bottom.
   - you CANNOT set a width or a height on an inline element
 
-### The Span Element
+## The Span Element
 
 There is a very useful inline element, called a span
 
 - the span element is like strong and em, in that we use it to style text, but it has no default styling and no semantic meaning
 - a span by itself is a little useless, normally we use a class on them to make it easy to target with class
 
-### Styling Links
+## Styling Links
 
 Links have different "states" that we can style as well
 
@@ -301,7 +301,7 @@ a:active {
 
 Finally, make sure to always include styles for :focus, it can be added to the hover pseudo class.
 
-### Inline-block
+## Inline-block
 
 Sometimes we need something which can stay inline, but which we can set margins and padding on.
 
@@ -325,7 +325,7 @@ Mostly used for buttons.
 
   `set width to 100%`
 
-### Max & Min Width
+## Max & Min Width
 
 - max-width
   - set to keep container size at a set size while on big screens, but allows the content to shrink in smaller screens
@@ -333,7 +333,7 @@ Mostly used for buttons.
   - minimum width were the container will never shrink below the smallest size
 - max/min width are different values than width
 
-### How to decide which CSS unit to use
+## How to decide which CSS unit to use
 
 General rule of thumb:
 
@@ -341,7 +341,7 @@ General rule of thumb:
 - padding and margin = em
 - Widths = em or percentage
 
-### Media Queries
+## Media Queries
 
 - Media queries let us add new styles that target only specific conditions
 
