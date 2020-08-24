@@ -168,6 +168,8 @@ Box-sizing: border-box fixes this by just going by our specified height/width.
 - **Container**
   - **bold items is default value**
   - flex-direction: **row** | row-reverse | column | column-reverse 
+    - when `flex-direction` is set to `column`, the flex values will not apply to height instead of width
+    - to wrap items in columns, set a height 
   - flex-wrap: **nowrap** | wrap | wrap-reverse 
   - justify-content (main-axis): **flex-start** | flex-end | center | space-between | space-around | space-evenly 
   - align-items (cross-axis): **stretch** | flex-start | flex-end | center | baseline
@@ -178,13 +180,32 @@ Box-sizing: border-box fixes this by just going by our specified height/width.
   - align-self: similar to align-items, but for one individual flex item 
   - order: defines the order in which one specific flex item should appear
   - flex-grow: how much an item can grow
+    - determines how items will expand if there is extra space in the container
+    - if there is extra space, the items in that row will evenly take up the available space 
   - flex-shrink: how much it can shrink
+    - determines how items will shrink if there isn't enough space in the container 
   - flex-basis : it's basically the width property for flex-items
+    - it sets the initial size of the flex-items if there is enough space.
+    - if not, then shrink or grow according to flex-grow or flex-shrink values
   - flex-shrink: 1 (The flex-item is allowed to shrink as the viewport shrinks)
-  - flex-shrink: 0 (The flex-item is not allowed to shrink down. )
+  - flex-shrink: 0 (The flex-item is not allowed to shrink down is there is extra space)
   - flex-grow: 1 (allows element to take up as much space as it can)
   - flex-grow: 0 (does not allow element to grow)
   - flex: flex-grow flex-shrink flex-basis
+
+![Flex-basis and Space Distribution](/home/cmendez20/Documents/notes/imgs/css/flex-basis.png)
+
+## Flex Shorthand 
+
+```css
+/* flex: flex-grow-value flex-shrink-value flex-basis-value; */
+
+flex: 0 1 100px;
+flex: 1 0 40%;
+flex: 2 2 auto;
+```
+
+
 
 ## Responsive Images
 
@@ -362,4 +383,30 @@ General rule of thumb:
   - `@media screen {...}`
 -  You can combine a type with a condition by using and:
   - `@media screen and (min-width: 960px) {...}`
+
+## Position: Relative vs. Absolute
+
+- `position: relative;` property keeps things in the normal flow. Movement with offset properties (top, bottom, left, right) are based on the original element's position
+- `position: absolute;` property moves the element out of the page's normal flow. It's like it is on its own layer. 
+  - to move it up or down a "layer," use change the  `z-index` property
+- By default, elements are positioned relative to the body.
+  - to position along a certain area, add `position: relative` to a containing element - the parent element.
+
+## Creating a fixed navigation bar
+
+```css
+nav {
+    /* position sticky and top property allows the nav to stay at the top of the viewport */
+    position: sticky;
+    top: 0;
+    
+    /* a high z-index means that the navbar will always be on top */
+    z-index: 100;
+    
+    /* with no set width, the navbar will be the width of its content */
+    width: 100%;
+    
+    
+}
+```
 
