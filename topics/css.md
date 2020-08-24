@@ -1,4 +1,4 @@
-# Selectors 
+# scSelectors 
 
 ## Selector specificity  
 
@@ -383,25 +383,136 @@ General rule of thumb:
 
 ## Media Queries
 
-- Media queries let us add new styles that target only specific conditions
+Media queries let us add new styles that target only specific conditions
 
-`@media media-type and (media-features) {...}`
+`@media rule media-type and (media-features) {...}`
+
+![media queries](../imgs/css/media-queries.png)
 
 - The media-type let's us target different types of media
+  - All `@media all {...}`
+    - all: matches to all devices
   - Screen `@media screen {...}`
+  - matches all devices that aren't categorized as print or speech
   - Print `@media print {...}`
+    - matches to printers and print-related displays such as removing the background-color so your design doesn't use up your user's ink
   - Speech `@media speech {...}`
-
+    - matches to screen reading devices that "read out" a page
+  - with a media type defined, the media query defaults to `all`
+  
 - The media condition let's us target specific conditions within that media type
   - Widths `@media (min-width: 600px) {...}`
   - Orientation `@media (orientation: landscape) {...}`
   - Specific features `@media (hover) {...}`
--  Both media types and conditions are optional
+  
+- Both media types and conditions are optional
+
 - We do need to either have a type or condition though
+
 - For example, we can target only screens
+  
   - `@media screen {...}`
+  
 -  You can combine a type with a condition by using and:
+  
   - `@media screen and (min-width: 960px) {...}`
+  
+- Media queries are usually defined at the bottom of your main CSS file, or you can use `@import` to load the stylesheet into the main CSS file
+
+  `@import url("mobile.css") screen and (max-width: 480px);`
+
+- Or, you can use `<link>` to load the stylesheet into the HTML file 
+
+`<link rel="stylesheet" media="screen and (max-width: 480px)" href="mobile.css">`
+
+## Breakpoints
+
+- 320px: Mobile portrait
+- 480px: Mobile landscape
+- 600px: Small tablet
+- 768px: Tablet portrait
+- 940 - 1024px: Tablet landscape
+- 1280px and greater: Desktop, laptop
+
+> With the rise of the number of devices available, it's hard to pinpoint what is even considered what is a common size anymore. So rather than focusing on specific devices, it's better to focus on where the design and layout needs adjusting.
+
+## Width Media Feature
+
+When using the Width Media Feature, the media query test applies to the width of the browser's viewport.
+
+```css
+/* Exact width */
+@media (width: 360px) {...}
+
+/* Minimum width - 360px or larger */
+@media (min-width: 360px) {...}
+
+/* Maximum width - 360px or smaller */
+@media (max-width: 360px) {...}
+```
+
+Using the min or max value works better than just width because it specifies a range such as larger than or smaller than. If we use width alone, then it only applies if the viewport is exactly equal to the defined value.
+
+A simple solution:
+
+```css
+/* 800px and larger */
+@media (min-width: 800px) {...}
+/* 799px and smaller */
+@media (max-width: 799px) {...}
+
+/* OR */
+
+/* 801px and larger */
+@media (min-width: 801px) {...}
+/* 800px and smaller */
+@media (max-width: 800px) {...}
+```
+
+## Desktop First
+
+Usually uses `max-width` media queries
+
+```css
+/* Optimized for larger screens */
+body {...}
+/* Changes made for smaller screens */
+@media (max-width: 800px) {
+	body {...}
+}
+@media (max-width: 400px) {
+    body {...}
+}
+```
+
+## Mobile First
+
+The designs in CSS cater to smaller sizes first. This approach usually uses `min-width` media queries. 
+
+```css
+/* Optimized for larger screens */
+body {...}
+/* Changes made for larger screens */
+@media (min-width: 800px) {
+	body {...}
+}
+@media (min-width: 1200px) {
+    body {...}
+}
+```
+
+You can also combine min and max to create a range.
+
+```css
+/* This applies a range of 400px to 800px */
+@media (min-width: 400px) and (max-width: 800px) {
+	body {...}
+}
+```
+
+## min-and max-width Breakpoints
+
+Sometimes, when you use min-width and max-width values, you may end up targeting the same resolution.
 
 ## Position: Relative vs. Absolute
 
@@ -429,3 +540,42 @@ nav {
 }
 ```
 
+## Responsive Web Design (RWD)
+
+1. Fluid Layout
+2. Flexible Images
+3. Media Queries
+
+## Fluid Layout
+
+- instead of fixed-width pixels, use percentage-based values with min and max properties to create a flexible foundation
+
+```css
+/* 
+When the viewport is wider than the max-width, the content wrap maxes out at the defined value, but when the viewport is smaller than the max-width, it becomes the same width as its container (if a width is not defined).
+
+When the viewport is smaller than the max-width value, it will apply the width value (85%), thus, leaving some spaced around the content instead of the content sticking to the edges of the container at 100% width.
+*/
+.container {
+    max-width: 800px;
+    width: 85%;
+}
+```
+
+- While fluid layouts may not solve everything, starting with flexible CSS will set the foundation for optimizing the layout for different screen sizes rather than relying solely on media queries. 
+
+## Images
+
+- Images that are part of the content should be added with HTML
+
+  `img src="images/project-courses.jpg" alt="course thumbnail">`
+
+- Images that are presentational should be added with CSS
+
+  ```css
+  section {
+  	background-image: url(path/to/image);
+  }
+  ```
+
+- In an actual project, image sizes should match the dimensions of the area it's being applied to.
