@@ -193,7 +193,7 @@ Box-sizing: border-box fixes this by just going by our specified height/width.
   - flex-grow: 0 (does not allow element to grow)
   - flex: flex-grow flex-shrink flex-basis
 
-![Flex-basis and Space Distribution](/home/cmendez20/Documents/notes/imgs/css/flex-basis.png)
+![Flex-basis and Space Distribution](../imgs/css/flex-basis.png)
 
 ## Flex Shorthand 
 
