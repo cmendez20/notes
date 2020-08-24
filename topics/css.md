@@ -205,9 +205,9 @@ flex: 1 0 40%;
 flex: 2 2 auto;
 ```
 
+> IMPORTANT REALIZATION: Ok, so this flex shorthand is placed on your flex items. flex works like this: flex-grow is saying, "hey, if there is extra space, let me increase my size." Flex-shrink is saying how it's ok to shrink my size if the viewport becomes less than my ideal size(flex-basis). Flex-basis is the INITIAL size of your flex-item and can grow or shrink accordingly to your aforementioned values. If your container is `900px` and you have a 3 flex items with a flex-basis of 200px, 500px, and 200px respectively, then when the container's width becomes smaller than `900px` the last flex item will wrap to the next line because the container does not have enough room for that last flex items width (flex-basis) if that item has flex-shrink set to 0.
 
-
-## Responsive Images
+Responsive Images
 
 - To make responsive images, format the img element. 
   - always declare a width and height in percentages so that the image is fluid.
