@@ -216,10 +216,29 @@ Responsive Images
 ## CSS Grid
 
 - CSS Grid replaces float layouts, using less, and more readable and logical CSS and HTML
+- Most commonly used with 12-column layout - very versatile for responsive design
 - CSS Grid works perfectly together with Flexbox, which is best to handle one-dimensional components and layouts 
 - CSS Grid completely changes the way that we envision and build two-dimensional layouts 
 
 ![CSS Grid Properties Overview](../imgs/css/css-grid-overview.png)
+
+## minmax()
+
+```css
+/* sets row height to 100px */
+grid-column-rows: 100px;
+
+/* sets minimum row height to 100px, max height to auto, meaning if the content is longer, it will expand to fit */
+grid-column-rows: minmax(100px, auto);
+
+/* one row set to a min and max height value */
+grid-column-rows: minmax(100px, auto);
+
+/* two rows height set to a min and max height value */
+grid-column-rows: repeat(2, minmax(100px, auto));
+```
+
+
 
 ## THE CALC FUNCTION TO THE RESCUE 
 
