@@ -546,6 +546,12 @@ nav {
 2. Flexible Images
 3. Media Queries
 
+Websites are responsive by default:
+
+`width: 100%` && `height: 100%`
+
+It's us who within our own css styles take away the responsiveness. Anytime we run into an issue, it's us that did something in CSS that took away its responsiveness. 
+
 ## Fluid Layout
 
 - instead of fixed-width pixels, use percentage-based values with min and max properties to create a flexible foundation
