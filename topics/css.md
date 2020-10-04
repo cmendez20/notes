@@ -552,6 +552,8 @@ Websites are responsive by default:
 
 It's us who within our own css styles take away the responsiveness. Anytime we run into an issue, it's us that did something in CSS that took away its responsiveness. 
 
+Therefore, to keep content responsive, never use fixed-widths. Consider using percentages for widths instead.
+
 ## Fluid Layout
 
 - instead of fixed-width pixels, use percentage-based values with min and max properties to create a flexible foundation
