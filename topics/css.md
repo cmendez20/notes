@@ -257,6 +257,12 @@ grid-column-rows: repeat(2, minmax(100px, auto));
 - use calc(100vh - whatever height of navbar to make a complete 100vh experience for landing page.
 - ex: calc (100vh - 6 rem)
 
+### Responsive Typography
+
+`font-size: calc(Xvw + Yem)`
+- X and Y = two numbers. 
+- Example: calc(0.5vw + 1em); The cool thing is, you can easily control 'how responsive' the text will be.
+
 ## Consistent Margins with Type
 
 - for consistency, often we "turn off" the margin-top on typography related elements.
