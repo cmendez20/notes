@@ -225,6 +225,29 @@ Responsive Images
   - always declare a width and height in percentages so that the image is fluid.
   - image should be displayed as block, so that there is no small space beneath image.
 
+### Adding Space Between Columns with Flexbox
+
+- Use the combinator operator to select if an element has an adjacent sibling of `.col` then it will select it. 
+
+  ```css
+  .col + .col {
+  	margin-left: 30px;
+  }
+  ```
+
+- Or use Wes Bos Calc function
+
+  ```
+  .col {
+  	margin: 0 10px;
+  	flex: 1 1 calc(33.33% - 20px);
+  }
+  ```
+
+  
+
+
+
 ## CSS Grid
 
 - CSS Grid replaces float layouts, using less, and more readable and logical CSS and HTML
