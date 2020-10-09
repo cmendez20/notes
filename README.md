@@ -8,4 +8,4 @@
 
 ### Journal
 
-- [100 Days of Code](./topics/100_days_of_code.md)
+- [100 Days of Code](./topics/100-days-of-code.md)

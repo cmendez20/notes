@@ -257,6 +257,13 @@ Responsive Images
 
 ![CSS Grid Properties Overview](../imgs/css/css-grid-overview.png)
 
+### CSS Grid Firefox Dev Tools - Line Meanings
+
+![CSS Grid Line Meanings](../imgs/css/css-grid-line-meanings.png)
+
+- Explicit tracks are the ones we created, the one we defined with `grid-template-columns/rows`
+- Implicit tracks were created by the browser
+
 ## minmax()
 
 ```css
