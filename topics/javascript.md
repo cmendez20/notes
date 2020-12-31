@@ -115,3 +115,13 @@ If you don't include parenthesis, then JavaScript looks at the brackets and thin
 A nested for loop for creating a 2D array is like the formula for finding the area of a 2D shape: 
 
 `area = length * width`
+
+### What is the DOM?
+
+**DOCUMENT OBJECT MODEL**: Structured representation of HTML documents. Allows JavaScript to access HTML elements and styles to manipulate them (change text, HTML attributes, and even CSS styles).
+
+- Anything that has to be in the HTML document also has to be in the DOM tree. Thus, accessible with JavaScript.
+
+- DOM !== JAVASCRIPT
+
+DOM Methods and Properties for DOM Manipulation are apart of WEB APIs - libraries that browsers implement and that we can interact through JavaScript code.
