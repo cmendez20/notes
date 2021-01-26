@@ -1,5 +1,32 @@
 # JavaScript
 
+*JavaScript is a high-level, prototype-based, object-oriented, multi-paradigm, interpreted or just-in-time compiled, dynamic, single-threaded, garbage-collected programming language with first-class functions and a non-blocking event loop concurrency model.*
+
+### Paradigms
+
+- An approach and mindset of structuring code, which will direct your coding style and technique
+
+1. Procedural programming
+   - very simple, linear way to organize code with some functions
+2. Object-oriented programming
+3. Functional programming
+
+### First-Class Functions
+
+In a language with **first-class functions**, functions are simply treated as **variables**. We can pass them into other functions, and return them from functions.
+
+- i.e. passing a function into another function as an argument: First-class functions!
+
+### The Concurrency Model
+
+- how the JavaScript engine handles multiple tasks happening at the same time 
+  - Why do we need that? 
+- JavaScript runs in one **single thread**, so it can only do one thing at a time.
+  - So what about a long-running task?
+- Sounds like it would block the single thread. However, we want non-blocking behavior! 
+  - How do we achieve that? 
+- By using an **event loop**: takes long-running tasks, executes them in the "background", and puts them back in the  main thread once they are finished. 
+
 ### The Conditional (Ternary) Operator
 
 The conditional operator, also called the ternary operator, can be used as a one line if-else expression.
