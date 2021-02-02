@@ -29,6 +29,8 @@ In a language with **first-class functions**, functions are simply treated as **
 
 ### Hoisting in JavaScript
 
+"Variables lifted to the top of their scope". Really, hoisting means: before execution, code is scanned for variable declarations, and for each variable, a new property is created in the variable enviornment object.
+
 - Hoisting in JavaScript, with the `var` data type means JavaScript will declare variables first, and then give them a value later. 
   - So, to avoid weird issues, declare your variables before you use them
 - With `let` and `const`, JavaScript does not hoist these
