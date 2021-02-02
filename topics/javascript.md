@@ -27,6 +27,14 @@ In a language with **first-class functions**, functions are simply treated as **
   - How do we achieve that? 
 - By using an **event loop**: takes long-running tasks, executes them in the "background", and puts them back in the  main thread once they are finished. 
 
+### Hoisting in JavaScript
+
+- Hoisting in JavaScript, with the `var` data type means JavaScript will declare variables first, and then give them a value later. 
+  - So, to avoid weird issues, declare your variables before you use them
+- With `let` and `const`, JavaScript does not hoist these
+- Function statements and function declarations are hoisted.
+  - Function expressions are not hoisted, treated as a let/const variable
+
 ### The Conditional (Ternary) Operator
 
 The conditional operator, also called the ternary operator, can be used as a one line if-else expression.
