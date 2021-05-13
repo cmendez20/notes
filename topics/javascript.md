@@ -147,6 +147,8 @@ const ratings = watchList.map(movie => ({title: movie.Title, rating: movie.imdbR
 
 If you don't include parenthesis, then JavaScript looks at the brackets and thinks you're just using a regular function block.
 
+![array-methods-overview](../imgs/js/array-methods-overview.png)
+
 ### Nested For Loops
 
 A nested for loop for creating a 2D array is like the formula for finding the area of a 2D shape: 
