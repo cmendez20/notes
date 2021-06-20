@@ -5,7 +5,6 @@
 ### Paradigms
 
 - An approach and mindset of structuring code, which will direct your coding style and technique
-
 1. Procedural programming
    - very simple, linear way to organize code with some functions
 2. Object-oriented programming
@@ -86,13 +85,13 @@ btn.addEventListener('click', function() {
 
 Objects & arrays are copied by ***reference***. 
 
-``` js
+```js
 const person1 = {
-	first: 'chris',
+    first: 'chris',
     last: 'mendez'
 };
 const person2 = {
-	first: 'chris',
+    first: 'chris',
     last: 'mendez'
 }
 
@@ -105,13 +104,13 @@ const person3 = person1;
 
 - only copies one level deep.
 
-``` javascript
+```javascript
 const person1 = {
-	first: 'chris',
+    first: 'chris',
     last: 'mendez'
 };
 const person2 = {
-	first: 'chris',
+    first: 'chris',
     last: 'mendez'
 }
 
@@ -127,7 +126,7 @@ Two distinct principles for functional programming:
 
 2) Declare function arguments - any computation inside a function  depends only on the arguments, and not on any global object or variable.
 
-### Arrays 
+### Arrays
 
 - Some methods will mutate (modify) the original array and others will leave the original array intact. 
 - anytime you want to use a mutation method and NOT mutate the original array, we need to take a copy of the array using the spread operator
@@ -164,3 +163,5 @@ A nested for loop for creating a 2D array is like the formula for finding the ar
 - DOM !== JAVASCRIPT
 
 DOM Methods and Properties for DOM Manipulation are apart of WEB APIs - libraries that browsers implement and that we can interact through JavaScript code.
+
+# 
