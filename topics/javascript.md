@@ -148,6 +148,16 @@ If you don't include parenthesis, then JavaScript looks at the brackets and thin
 
 ![array-methods-overview](../imgs/js/array-methods-overview.png)
 
+### Array Methods
+
+- `pop()` method removes the last element from an array 
+- `shift()` method removes the first array element and "shifts" all other elements to a lower index
+- `push()` method adds a new element to an array (at the end) 
+- `unshift()` method adds a new element to an array (at the beginning)
+- `splice()` method can be used to add or delete elements from an array 
+  - (defines the position where new elements should be added, defines how many elements should be removed, rest of the parameters are the elements you want to add (or leave blank to delete elements from an array))
+- `concat()` method creates a new array by merging existing arrays
+
 ### Nested For Loops
 
 A nested for loop for creating a 2D array is like the formula for finding the area of a 2D shape: 
