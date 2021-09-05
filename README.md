@@ -1,10 +1,11 @@
-# Programming 
+# Programming
 
 ### Frontend
 
 - [HTML](./topics/html.md)
 - [CSS](./topics/css.md)
 - [JavaScript](./topics/javascript.md)
+- [JavaScript The Hard Parts](./topics/css.md)
 
 ### Journal
 
