@@ -40,6 +40,8 @@ Functions are code we save ('define') functions & can use (call/invoke/execute/r
   
   - returns 10 * 10
   
+  
+  
   ```javascript
   function beSquared () {
     return 10 & 10;
@@ -50,12 +52,24 @@ Functions are code we save ('define') functions & can use (call/invoke/execute/r
 
 - *We can generalize the function to make it reusable*
 
-```javascript
-function squareNum(num) {
-  return num * num;
-}
-```
+    ```javascript
+    function squareNum(num) {
+      return num * num;
+    }
+    ```
 
-  
+  ### Callbacks & Higher Order Functions
 
+Functions in JavaScript = first class objects. They can co-exist with and can be treated like any other JavaScript object.
 
+1. Assigned to variables and properties of other objects
+2. Passed as arguments into functions
+3. Returned as values from functions
+
+The **outer** function that takes in a function is our higher-order function. Also, any function that passes out a function is a higher-order function.
+
+The function we insert is our **callback** function
+
+**Callbacks and higher order functions simply our code and keep it DRY**
+
+- **Declarative readable code**: Map, filter, reduce - the most readable way to write code to work with data
