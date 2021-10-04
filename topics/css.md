@@ -98,6 +98,24 @@ Box-sizing: border-box fixes this by just going by our specified height/width.
     - **abstracts/** (where we put code that doesn't output any CSS, such as variables or mix-ins)
     - **vendors/** (where all third-party CSS goes)
 
+## Normal Flow vs. Absolute Positioning
+
+### Normal Flow
+
+- Default Positioning
+- Element is "**in** flow"
+- Elements are simply laid out according to their order in the HTML code
+- `position: relative`
+
+### Absolute Positioning
+
+- Element is removed from the normal flow: "**out of** flow"
+- No impact on surrounding elements, might overlap them
+- We use top, bottom, left, or right to offset the element from its relatively positioned container
+- `position: absolute`
+
+
+
 ## BEM: Building with Meaningful Class Names
 
 - Block Element Modifier
