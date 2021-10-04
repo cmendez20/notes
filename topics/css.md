@@ -39,6 +39,10 @@ the parent's width is always the reference for percentage-based calculations
 
 length w/ em unites uses the current element for computed font-size, reference is current element. 
 
+## Margin
+
+- Use `margin-bottom` for vertical spacing. 
+
 ## CSS Value Processing: What You Need To Know
 
 - Browsers specify a root font-size for each page (usually 16px)
