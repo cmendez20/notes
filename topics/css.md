@@ -174,6 +174,8 @@ Box-sizing: border-box fixes this by just going by our specified height/width.
 
 ## Flexbox
 
+![](C:\Users\chrsm\Documents\notes\imgs\css\flexbox_cheatsheet.png)
+
 - The main idea behind flexbox is to give the container the ability to expand and to shrink elements to elements to best use all the available space
 - Flexbox replaces float layouts, using less, and more readable and logical code
 - Flexbox completely changes the way that we build one-dimensional layouts 
