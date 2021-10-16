@@ -69,5 +69,27 @@
 11. Don't make text too light! Use a tool to check contrast between text and background colors
     1. Contrast ratio needs to be at least **4:5:1 for normal text** and **3:1 for large text (18px+)**
 
+### Web Design Rules #3: Images and Illustrations
 
+#### Use Good Images
 
+1. Different types of images: product photos, storytelling photos, illustrations, patterns
+2. Use images to support your website's message and story. So only use relevant images!
+3. Prefer original images. If not possible, use original-looking stock images (not generic ones!)
+4. Try to show real people to trigger user's emotions
+5. If necessary, crop images to fit your message
+6. Experiment combining photos, illustrations and patterns
+
+#### Handling Text on Images
+
+7. **Method #1**: Darker or brighten image (completely or partially, using a gradient)
+8. **Method #2**: Position text into neutral image area i.e. empty white space
+9. **Method #3**: Put text in a box
+
+#### Some Technical Details
+
+10. To account for high-res screens, make image dimensions **2x as big** as their displayed size
+    1. **Scale factor:** Actual pixels the screen contains / Pixels represented on screen
+    2. On high-res screens, scale factor is 2x or even 3x, on "normal" screens it's just 1x (1 physical pixel = 1 design pixel)
+11. **Compress images** for a lower file size and better performance
+12. When using multiple images side-by-side, make sure they have the **exact same dimensions**
