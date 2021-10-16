@@ -411,6 +411,22 @@ a:active {
 
 **it controls all of your link states**
 
+BEST PRACTICE
+
+```css
+.btn:link,
+.btn:visited {
+    color: green;
+}
+
+.btn:hover,
+.btn: active {
+    color: lighter green;
+}
+```
+
+
+
 Finally, make sure to always include styles for :focus, it can be added to the hover pseudo class.
 
 ## Inline-block
