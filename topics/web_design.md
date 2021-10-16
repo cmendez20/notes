@@ -49,7 +49,25 @@
 - Cardo
 - Lora
 
+### Web Design Rules #2: 
 
+#### Choose The Right Color
+
+1. Make the main color match your website's personality: colors convey meaning!
+2. Use a good color tone! Don't choose a random tone or CSS named colors.
+3. You need at least two types of colors in your color palette: a main color and a grey color
+4. With more experience, you can add more colors: accent colors (use a tool)
+5. For diversity, create lighter and darker "versions" (tints and shades)
+6. Use your main color to draw attention to the most important elements on the page
+7. Use colors to add interesting accents or make entire components or section stand out
+8. You can try to use your color strategically in images and illustrations
+
+#### Colors and Typography
+
+9. On dark colored backgrounds, try to use a tint of the background ("lighter version") for text
+10. Text should usually not be completely black. Lighten it up if it looks heavy and uninviting
+11. Don't make text too light! Use a tool to check contrast between text and background colors
+    1. Contrast ratio needs to be at least **4:5:1 for normal text** and **3:1 for large text (18px+)**
 
 
 
