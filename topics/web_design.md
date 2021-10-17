@@ -69,17 +69,26 @@
 11. Don't make text too light! Use a tool to check contrast between text and background colors
     1. Contrast ratio needs to be at least **4:5:1 for normal text** and **3:1 for large text (18px+)**
 
-### Web Design Rule  #4
+### Web Design Rules #3: Images and Illustrations
+#### Use Good Images
 
-- **Shadow creates depth (3D)**: the more shadow, the **further away from the interface** the element is
+1. Different types of images: product photos, storytelling photos, illustrations, patterns
+2. Use images to support your website's message and story. So only use relevant images!
+3. Prefer original images. If not possible, use original-looking stock images (not generic ones!)
+4. Try to show real people to trigger user's emotions
+5. If necessary, crop images to fit your message
+6. Experiment combining photos, illustrations and patterns
 
-1. You don't have to use shadows! Only use them if it makes sense for the website personality
-2. Use shadows **in small doses**: don't add shadows to every element!
-3. Go light on shadows, don't make them **too dark!**
-4. Use **small shadows** for smaller elements that should stand out (to draw attention)
-5. Use **medium-size shadows** for larger areas that should stand out a bit more
-6. Use **large shadows** for elements that should really **float above** the interface
-7. Experiment with **changing shadows** on mouse interaction (click and hover)
+#### Handling Text on Images
 
+7. **Method #1**: Darker or brighten image (completely or partially, using a gradient)
+8. **Method #2**: Position text into neutral image area i.e. empty white space
+9. **Method #3**: Put text in a box
 
+#### Some Technical Details
 
+10. To account for high-res screens, make image dimensions **2x as big** as their displayed size
+    1. **Scale factor:** Actual pixels the screen contains / Pixels represented on screen
+    2. On high-res screens, scale factor is 2x or even 3x, on "normal" screens it's just 1x (1 physical pixel = 1 design pixel)
+11. **Compress images** for a lower file size and better performance
+12. When using multiple images side-by-side, make sure they have the **exact same dimensions**
