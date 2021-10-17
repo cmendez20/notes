@@ -92,3 +92,15 @@
     2. On high-res screens, scale factor is 2x or even 3x, on "normal" screens it's just 1x (1 physical pixel = 1 design pixel)
 11. **Compress images** for a lower file size and better performance
 12. When using multiple images side-by-side, make sure they have the **exact same dimensions**
+
+### Web Design Rule  #4
+
+- **Shadow creates depth (3D)**: the more shadow, the **further away from the interface** the element is
+
+1. You don't have to use shadows! Only use them if it makes sense for the website personality
+2. Use shadows **in small doses**: don't add shadows to every element!
+3. Go light on shadows, don't make them **too dark!**
+4. Use **small shadows** for smaller elements that should stand out (to draw attention)
+5. Use **medium-size shadows** for larger areas that should stand out a bit more
+6. Use **large shadows** for elements that should really **float above** the interface
+7. Experiment with **changing shadows** on mouse interaction (click and hover)
