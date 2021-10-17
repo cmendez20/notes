@@ -69,5 +69,17 @@
 11. Don't make text too light! Use a tool to check contrast between text and background colors
     1. Contrast ratio needs to be at least **4:5:1 for normal text** and **3:1 for large text (18px+)**
 
+### Web Design Rule  #4
+
+- **Shadow creates depth (3D)**: the more shadow, the **further away from the interface** the element is
+
+1. You don't have to use shadows! Only use them if it makes sense for the website personality
+2. Use shadows **in small doses**: don't add shadows to every element!
+3. Go light on shadows, don't make them **too dark!**
+4. Use **small shadows** for smaller elements that should stand out (to draw attention)
+5. Use **medium-size shadows** for larger areas that should stand out a bit more
+6. Use **large shadows** for elements that should really **float above** the interface
+7. Experiment with **changing shadows** on mouse interaction (click and hover)
+
 
 
