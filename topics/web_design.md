@@ -104,3 +104,26 @@
 5. Use **medium-size shadows** for larger areas that should stand out a bit more
 6. Use **large shadows** for elements that should really **float above** the interface
 7. Experiment with **changing shadows** on mouse interaction (click and hover)
+
+### Web Design Rule #5
+
+1. Position important elements closer to the top of the page, where they get more attention
+2. Use images mindfully, as they draw a lot of attention (larger images get more attention)
+3. Whitespace creates separation, so use whitespace strategically to emphasize elements
+4. For text elements, use font size, weight, color, and whitespace to convey importance
+5. What text elements to emphasize? Titles, sub-titles, links, buttons, data points, icons
+   1. You can de-emphasize less important text, like labels or secondary/additional information
+6. Emphasize an important component using background color, shadow, or border (or multiple)
+7. Try emphasizing some component A over component B by de-emphasizing component B
+8. What components to emphasize? Testimonials, call-to-action sections, highlight sections, preview cards, forms, pricing tables, important rows/columns in tables, etc.
+
+
+
+
+
+
+
+
+
+
+
