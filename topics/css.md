@@ -1,8 +1,4 @@
-
-
-
-
-### For Future Reference
+## CSS RESET
 
 ```css
 /*
@@ -25,9 +21,9 @@ html {
 
 ```
 
-# Selectors 
+## Selectors 
 
-## Selector specificity  
+### Selector specificity  
 
 (Inline, IDs, Classes, Elements)
 
@@ -636,6 +632,10 @@ Sometimes, when you use min-width and max-width values, you may end up targeting
   - to move it up or down a "layer," use change the  `z-index` property
 - By default, elements are positioned relative to the body.
   - to position along a certain area, add `position: relative` to a containing element - the parent element.
+
+### Vertical Centering with Absolute Positioning and Transform
+
+<img src="C:\Users\chrsm\Documents\notes\imgs\css\vertical_centering_with_abs_pos_and_transform.png" style="zoom:50%;" />
 
 ## Creating a fixed navigation bar
 
