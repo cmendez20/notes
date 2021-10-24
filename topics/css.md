@@ -702,3 +702,21 @@ When the viewport is smaller than the max-width value, it will apply the width v
   ```
 
 - In an actual project, image sizes should match the dimensions of the area it's being applied to.
+
+### Background Image Overlay
+
+```css
+header {
+        height: 100vh;
+        position: relative;
+    	/* background-image is a stack, use gradient first then place image from files */
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url(hero.jpg);
+        background-size: cover; /* cover is used to cover entire area */
+        color: #fff;
+      }
+```
+
