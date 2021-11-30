@@ -175,6 +175,10 @@ Box-sizing: border-box fixes this by just going by our specified height/width.
   - to install live-server: only have to do it once, to run it just type `live-server` in the project home folder terminal. 
     - npm install live-server -g
 
+### SASS 7-1 Architecture
+
+ ![](/home/mendecj812/web_dev/notes/imgs/css/sass_7_in_1_architecture.png)
+
 ## REVIEW: Basic Responsive Design Principles
 
 1. Fluid Grids and Layouts
