@@ -21,6 +21,33 @@ html {
 
 ```
 
+
+
+## Simple responsive layout
+
+```css
+{
+	display: grid
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
+    gap: 1rem;
+} 
+```
+
+
+
+## Clamp it down
+
+```css
+{
+	width: clamp(200px, 50%, 600px);
+	/* clamp(min, preferred, max) */
+}
+```
+
+
+
+
+
 ## Selectors 
 
 ### Selector specificity  
