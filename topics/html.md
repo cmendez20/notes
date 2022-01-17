@@ -1,5 +1,17 @@
 # HTML Notes
 
+## Semantic HTML Structure
+
+- Both the `<article>` and `<section>` elements contribute to a document’s structure and help to outline a  document. If the content is being grouped solely for styling purposes  and doesn’t provide value to the outline of a document, use the `<div>` element.
+
+- If the content adds to the document outline and it can be independently redistributed or syndicated, use the `<article>` element.
+
+- If the content adds to the document outline and represents a thematic group of content, use the `<section>` element.'
+
+## Accessibility
+
+-  if an image doesn’t have a meaningful value—perhaps it is part of the  user interface, for example—it should be included as a CSS background  image if at all possible, not as an `<img>` element.
+
 ## Navbar HTML Structure
 
 - Can place `index.html` into a folder titled based on the name of the url you want. It makes the url slug look cleaner. 
