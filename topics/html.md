@@ -1,4 +1,4 @@
-# HTML
+# HTML Notes
 
 ## Navbar HTML Structure
 

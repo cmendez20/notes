@@ -1,6 +1,6 @@
 # JavaScript Principles
 
-### Thread of Execution
+## Thread of Execution
 
 When JavaScript code runs, it:
 
@@ -10,7 +10,7 @@ When JavaScript code runs, it:
   
   - We can even save code ('functions')
 
-### Functions
+## Functions
 
 Functions are code we save ('define') functions & can use (call/invoke/execute/run) later with the function's name & ( )
 

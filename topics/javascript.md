@@ -1,8 +1,8 @@
-# JavaScript
+# JavaScript Notes
 
 *JavaScript is a high-level, prototype-based, object-oriented, multi-paradigm, interpreted or just-in-time compiled, dynamic, single-threaded, garbage-collected programming language with first-class functions and a non-blocking event loop concurrency model.*
 
-### Paradigms
+## Paradigms
 
 - An approach and mindset of structuring code, which will direct your coding style and technique
 1. Procedural programming
@@ -10,13 +10,13 @@
 2. Object-oriented programming
 3. Functional programming
 
-### First-Class Functions
+## First-Class Functions
 
 In a language with **first-class functions**, functions are simply treated as **variables**. We can pass them into other functions, and return them from functions.
 
 - i.e. passing a function into another function as an argument: First-class functions!
 
-### The Concurrency Model
+## The Concurrency Model
 
 - how the JavaScript engine handles multiple tasks happening at the same time 
   - Why do we need that? 
@@ -26,7 +26,7 @@ In a language with **first-class functions**, functions are simply treated as **
   - How do we achieve that? 
 - By using an **event loop**: takes long-running tasks, executes them in the "background", and puts them back in the  main thread once they are finished. 
 
-### Hoisting in JavaScript
+## Hoisting in JavaScript
 
 "Variables lifted to the top of their scope". Really, hoisting means: before execution, code is scanned for variable declarations, and for each variable, a new property is created in the variable enviornment object.
 
@@ -36,7 +36,7 @@ In a language with **first-class functions**, functions are simply treated as **
 - Function statements and function declarations are hoisted.
   - Function expressions are not hoisted, treated as a let/const variable
 
-### The Conditional (Ternary) Operator
+## The Conditional (Ternary) Operator
 
 The conditional operator, also called the ternary operator, can be used as a one line if-else expression.
 
@@ -67,11 +67,11 @@ function findGreater(a, b) {
 }
 ```
 
-### Closures
+## Closures
 
 Closures are the ability for an inner function to access variables from a higher level scope even after the functions have been called or closed over. 
 
-### Event Listeners
+## Event Listeners
 
 > Go get something, listen for something, then go do something.
 
@@ -81,7 +81,7 @@ btn.addEventListener('click', function() {
 });
 ```
 
-### Object Reference vs Values
+## Object Reference vs Values
 
 Objects & arrays are copied by ***reference***. 
 
@@ -118,7 +118,7 @@ const person2 = {
 const person3 = { ...person1 };
 ```
 
-### Functional Programming
+## Functional Programming
 
 Two distinct principles for functional programming: 
 
@@ -126,7 +126,7 @@ Two distinct principles for functional programming:
 
 2) Declare function arguments - any computation inside a function  depends only on the arguments, and not on any global object or variable.
 
-### Arrays
+## Arrays
 
 - Some methods will mutate (modify) the original array and others will leave the original array intact. 
 - anytime you want to use a mutation method and NOT mutate the original array, we need to take a copy of the array using the spread operator
@@ -164,7 +164,7 @@ A nested for loop for creating a 2D array is like the formula for finding the ar
 
 `area = length * width`
 
-### What is the DOM?
+## What is the DOM?
 
 **DOCUMENT OBJECT MODEL**: Structured representation of HTML documents. Allows JavaScript to access HTML elements and styles to manipulate them (change text, HTML attributes, and even CSS styles).
 
@@ -173,5 +173,3 @@ A nested for loop for creating a 2D array is like the formula for finding the ar
 - DOM !== JAVASCRIPT
 
 DOM Methods and Properties for DOM Manipulation are apart of WEB APIs - libraries that browsers implement and that we can interact through JavaScript code.
-
-# 
