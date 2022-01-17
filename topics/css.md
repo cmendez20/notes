@@ -225,7 +225,11 @@ Box-sizing: border-box fixes this by just going by our specified height/width.
   - a new line after the last import from a folder;
   - file extensions and leading underscores omitted.
 
+  
+  
   <img src="../imgs/css/sass-main.png" alt="main file of sass" style="zoom:80%;" />
+  
+  
 
 ## REVIEW: Basic Responsive Design Principles
 
@@ -249,7 +253,7 @@ Box-sizing: border-box fixes this by just going by our specified height/width.
 
 ## Flexbox
 
-![](..\imgs\css\flexbox_cheatsheet.png)
+<img src="../imgs/css/flexbox_cheatsheet.png" alt="flexbox cheatsheet" style="zoom: 80%;" />
 
 - The main idea behind flexbox is to give the container the ability to expand and to shrink elements to elements to best use all the available space
 - Flexbox replaces float layouts, using less, and more readable and logical code
