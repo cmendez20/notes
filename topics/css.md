@@ -1,3 +1,5 @@
+# Quick Tips
+
 ## CSS RESET
 
 ```css
@@ -44,9 +46,7 @@ html {
 }
 ```
 
-
-
-
+# CSS Properties
 
 ## Selectors 
 
