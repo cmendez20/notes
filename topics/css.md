@@ -1,6 +1,6 @@
-# Quick Tips
+## Quick Tips
 
-## CSS RESET
+### CSS RESET
 
 ```css
 /*
@@ -25,7 +25,7 @@ html {
 
 
 
-## Simple responsive layout
+### Simple responsive layout
 
 ```css
 {
@@ -37,7 +37,7 @@ html {
 
 
 
-## Clamp it down
+### Clamp it down
 
 ```css
 {
@@ -46,33 +46,30 @@ html {
 }
 ```
 
-# CSS Properties
+## CSS Properties
 
-## Selectors 
+### Selectors 
 
-### Selector specificity  
+- Selector specificity  
 
-(Inline, IDs, Classes, Elements)
+- (Inline, IDs, Classes, Elements)
+- Goes through selector and see what it has from left to right. (
+- 0, 0, 0, 0)
 
-Goes through selector and see what it has from left to right. 
+```css
+nav#nav div.pull-right .button {
+	background-color: green;
+}
 
-(0, 0, 0, 0)
+/* has a specificity of (0, 1, 2, 2) */
 
-`nav#nav div.pull-right .button {`
+#nav a.button:hover {
+    background-color: yellow;
+} 
 
-`	background-color: green;`
-
-`}` 
-
-has a specificity of (0, 1, 2, 2)
-
-`#nav a.button:hover {`
-
-`	background-color: yellow;`
-
-`}` 
-
-has a specificity of (0, 1, 2, 1). Therefore, the button's background color will be green since it wins out at the elements specificity. 
+/* has a specificity of (0, 1, 2, 1).
+Therefore, the button's background color will be green since it wins out at the elements specificity.*/
+```
 
 ## Reminders
 
