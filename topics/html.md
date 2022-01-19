@@ -8,6 +8,10 @@
 
 - If the content adds to the document outline and represents a thematic group of content, use the `<section>` element.'
 
+### Headings
+
+- Based on importance, not size
+
 ## Accessibility
 
 -  if an image doesn’t have a meaningful value—perhaps it is part of the  user interface, for example—it should be included as a CSS background  image if at all possible, not as an `<img>` element.
