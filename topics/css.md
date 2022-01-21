@@ -48,6 +48,12 @@ html {
 }
 ```
 
+### Nice Transitions
+
+```css
+transition: color 200ms ease-in-out;
+```
+
 ## CSS Properties
 
 ### Selectors 
