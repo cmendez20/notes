@@ -161,6 +161,34 @@ Box-sizing: border-box fixes this by just going by our specified height/width.
 - We use top, bottom, left, or right to offset the element from its relatively positioned container
 - `position: absolute`
 
+### Static
+
+```css
+.static {
+  position: static;
+}
+```
+
+- `static` is the default value. An element with `position: static;` is not positioned in any special way. A static element is said to be *not positioned* and an element with its position set to anything else is said to be *positioned*.  
+
+### Relative
+
+```css
+.relative1 {
+  position: relative;
+}
+.relative2 {
+  position: relative;
+  top: -20px;
+  left: 20px;
+  background-color: white;
+  width: 500px;
+}
+```
+
+- `relative` behaves the same as `static` unless you add some extra properties.  
+- Setting the `top`, `right`, `bottom`, and `left` properties of a relatively-positioned element will cause it to be  adjusted away from its normal position. Other content will not be  adjusted to fit into any gap left by the element.  
+
 ## BEM: Building with Meaningful Class Names
 
 - Block Element Modifier
