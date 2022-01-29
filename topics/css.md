@@ -56,6 +56,10 @@ html {
 transition: color 200ms ease-in-out;
 ```
 
+### Width: auto
+
+- `auto` width makes the box match the size of its contents
+
 ## CSS Properties
 
 ### Selectors 

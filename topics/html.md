@@ -77,3 +77,53 @@ display: flow-root;
 ```
 
 > Depending on where your element is floated, you may need to clear the float on the next element if one exists in the layout. If one doesn't exist, then self-clear the float on the parent element.
+
+## Styling Forms
+
+### The input tag
+
+- A label’s `for` attribute must match the `id` attribute of its associated `<input/>` element.
+  - this helps for 
+- When styling input tags, be very specific by targeting the input's attribute using the attribute selector:
+
+```css
+.form-row input[type='text'],
+.form-row input[type='email'] {
+  background-color: #FFFFFF;
+```
+
+- Again, we don’t want to use a plain old `input` type selector here because that would style *all* of our `<input/>` elements, including our upcoming radio buttons and checkbox. This is part of what makes styling forms tricky. Understanding the CSS to pluck out exactly the elements you want is a crucial skill.
+
+### Radio Buttons
+
+Every radio button group you create should:
+
+- Be wrapped in a `<fieldset>`, which is labeled with a    `<legend>`.
+- Associate a `<label>` element with each radio button.
+- Use the same `name` attribute for each radio button in the    group.
+- Use different `value` attributes for each radio button.
+
+```html
+<fieldset class='legacy-form-row'>
+  <legend>Type of Talk</legend>
+  <input id='talk-type-1'
+         name='talk-type'
+         type='radio'
+         value='main-stage' />
+  <label for='talk-type-1' class='radio-label'>Main Stage</label>
+  <input id='talk-type-2'
+         name='talk-type'
+         type='radio'
+         value='workshop'
+         checked />
+  <label for='talk-type-2' class='radio-label'>Workshop</label>
+</fieldset>
+```
+
+- Cannot use flexbox or grid to position/style radio buttons. Must use float.
+
+### Checkboxes
+
+- Checkboxes are sort of like radio buttons, but instead of selecting only one option, they let the user pick as many as they want. 
+  - This simplifies things, since the browser doesn’t need to know which checkboxes are part of the same group. 
+- In other words, we don’t need a `<fieldset>` wrapper or shared `name` attributes.
