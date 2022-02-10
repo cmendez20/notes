@@ -473,7 +473,11 @@ grid-column-rows: minmax(100px, auto);
 grid-column-rows: repeat(2, minmax(100px, auto));
 ```
 
+### grid-auto-flow: dense
 
+Fills empty cells in grid with any grid items it can fit into empty free spots. 
+
+Dense meaning it tries to fit everything into the grid.
 
 ### THE CALC FUNCTION TO THE RESCUE 
 
