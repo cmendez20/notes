@@ -74,3 +74,12 @@ $ git branch -u origin/main
 As you've seen, the process of renaming "master" to "main" isn't terribly complicated. 
 
 One thing to keep in mind, though, is your toolchain: if you're using a CI/CD tool, GitHub Actions, Azure DevOps / Atlassian Bamboo / GitLab  CI pipelines or anything like this, you should check these tools  thoroughly. If they depend on a specific "origin/master" branch, you  might have to change their settings, too.
+
+## Using the Amend Command
+
+git add changelog.md
+
+git commit - -amend - -no-edit
+
+git push -f origin main
+
