@@ -77,8 +77,6 @@ table {
 }
 ```
 
-
-
 ### Simple responsive layout
 
 ```css
@@ -88,8 +86,6 @@ table {
     gap: 1rem;
 } 
 ```
-
-
 
 ### Clamp it down
 
@@ -109,6 +105,40 @@ transition: color 200ms ease-in-out;
 ### Width: auto
 
 - `auto` width makes the box match the size of its contents
+
+### The perfect width for text
+
+- According to [The Elements of Typographic Style](http://webtypography.net/2.1.2#:~:text=“Anything from 45 to 75,is 40 to 50 characters.”) by Robert Bringhurst, "anything from 45 to 75 characters is widely  regarded as a satisfactory length of line for a single-column page set  in a serifed text face in a text size."
+
+```css
+p {
+  width: clamp(45ch, 50%, 75ch);
+}
+```
+
+### Padding Management
+
+- Using the same concept as above, where the `min()` function can set a "max" value and `max()` sets a "min" value, you can use `max()` to set a minimum padding size. 
+-  The idea is to enable an element to have additional padding at larger  screen sizes, but maintain a minimum padding at smaller screen sizes,  particularly on the inline padding. 
+- To achieve this, use `calc()` and subtract the minimum padding from either side: `calc((100vw - var(--contentWidth)) / 2)`, *or* use max: `max(2rem, 50vw - var(--contentWidth) / 2)`.
+
+```css
+footer {
+  padding: var(--blockPadding) max(2rem, 50vw - var(--contentWidth) / 2);
+}
+```
+
+### Fluid typography
+
+- Uses the `clamp()` function to set a minimum font size, maximum font size, and allow for scaling from the min to the max.
+
+-  Set the minimum acceptable font size (for example, `1.5rem` for a title, maximum size (i.e. `3rem`) and ideal size of `5vw`.
+
+```css
+h1 {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+}
+```
 
 ## CSS Properties
 
