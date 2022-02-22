@@ -10,11 +10,42 @@
 2. Object-oriented programming
 3. Functional programming
 
+## Primitive vs. Objects
+
+- Primitive values cannot be changed - they are immutable, unchangeable, READ-ONLY
+- **Variables are not values.**
+  - thus, they can be changed.
+- **Variables always point to values.**
+  - primitive values cannot be changed.
+  - we can change which value it points to by using the = assignment operator.
+
+- You cannot pass a variable in JavaScript.
+
+- ### Primitive values
+
+  - undefined (undefined), used for unintentionally missing values
+  - Null(null), used for intentionally missing values
+  - Booleans (true and false), used for logical operations
+  - Numbers (-100. 3.14, and other), used for math calculations
+  - Strings ('hello', 'abracadabra'), used for text
+  - Symbols (uncommon), used to hide implementation details
+  - BigInts (uncommon and new), used for math on big numbers
+
+- ### Objects and functions
+
+  - Objects used to group related data and code
+  - Functions used to refer to code
+
 ## First-Class Functions
 
 In a language with **first-class functions**, functions are simply treated as **variables**. We can pass them into other functions, and return them from functions.
 
 - i.e. passing a function into another function as an argument: First-class functions!
+- functions are just another type of object
+
+## Functions
+
+- in javascript, we pass only by value. NOT REFERENCE
 
 ## The Concurrency Model
 
