@@ -102,6 +102,12 @@ function findGreater(a, b) {
 
 Closures are the ability for an inner function to access variables from a higher level scope even after the functions have been called or closed over. 
 
+- closure gives our functions persistent memories and entirely new toolkit for writing professional code
+- **Helper functions:** Everyday professional helper functions like 'once' and 'memoize'
+- **Iterators and generators:** which use lexical scoping and closure to achieve the most contemporary patterns for handling data in JavaScript
+- **Module pattern:** Preserve state for the life of an application without polluting the global namespace
+- **Asynchronous JavaScript:** Callbacks and Promises rely on closure to persist state in an asynchronous environment
+
 ## Event Listeners
 
 > Go get something, listen for something, then go do something.
