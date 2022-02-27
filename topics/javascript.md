@@ -2,6 +2,17 @@
 
 *JavaScript is a high-level, prototype-based, object-oriented, multi-paradigm, interpreted or just-in-time compiled, dynamic, single-threaded, garbage-collected programming language with first-class functions and a non-blocking event loop concurrency model.*
 
+## Snippets
+
+#### Smooth Scrolling to a Section
+
+- not supported on ioS & Safari
+
+```javascript
+const section1 = document.querySelector('#section--1');
+section1.scrollIntoView({behavior: 'smooth'});
+```
+
 ## Paradigms
 
 - An approach and mindset of structuring code, which will direct your coding style and technique
