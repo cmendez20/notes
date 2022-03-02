@@ -129,6 +129,17 @@ btn.addEventListener('click', function() {
 });
 ```
 
+- `e.target` is what triggers the event dispatcher to trigger and `e.currentTarget` is what you assigned your listener to.
+
+  ### Why you should care
+
+  Suppose you're in a situation where you have access to an event object but not the DOM element. (In other words, no `$(this)`). If you want access to the DOM element that's associated with the event handler you defined, you should use currentTarget.
+
+- - `target` is whatever you actually clicked on. It can vary, as this can be within an element that the event was bound to.
+  - `currentTarget` is the element you actually bound the event to. This will never change.
+
+- `this` also refers to the `e.current.target`
+
 ## Object Reference vs Values
 
 Objects & arrays are copied by ***reference***. 
