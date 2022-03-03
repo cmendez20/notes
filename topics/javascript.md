@@ -119,7 +119,12 @@ Closures are the ability for an inner function to access variables from a higher
 - **Module pattern:** Preserve state for the life of an application without polluting the global namespace
 - **Asynchronous JavaScript:** Callbacks and Promises rely on closure to persist state in an asynchronous environment
 
-## Event Listeners
+## THE DOM
+
+- query selector finds children no matter how deep in the DOM tree
+- the closest method finds parent no matter how far up the DOM tree
+
+### Event Listeners
 
 > Go get something, listen for something, then go do something.
 
@@ -131,7 +136,7 @@ btn.addEventListener('click', function() {
 
 - `e.target` is what triggers the event dispatcher to trigger and `e.currentTarget` is what you assigned your listener to.
 
-  ### Why you should care
+  #### Why you should care
 
   Suppose you're in a situation where you have access to an event object but not the DOM element. (In other words, no `$(this)`). If you want access to the DOM element that's associated with the event handler you defined, you should use currentTarget.
 
@@ -139,6 +144,35 @@ btn.addEventListener('click', function() {
   - `currentTarget` is the element you actually bound the event to. This will never change.
 
 - `this` also refers to the `e.current.target`
+
+- `bind` method - creates a copy of the function that it is called on, and will set the `this` keyword in the function call to whatever value we pass into bind.
+
+  ```javascript
+  // Menu fade animation
+  const handleHover = function (e) {
+    console.log(this);
+  
+    if (e.target.classList.contains('nav__link')) {
+      const link = e.target;
+      const siblings = link.closest('.nav').querySelectorAll('.nav__link');
+      const logo = link.closest('.nav').querySelector('img');
+  
+      siblings.forEach(el => {
+        if (el !== link) el.style.opacity = this;
+      });
+      logo.style.opacity = this;
+    }
+  };
+  
+  // Passing "argument" into handler
+  // Impossible to pass an argument to a event handler,
+  // can only have one real value, the event.
+  // If you want to pass more values, use the this keyword and array or object.
+  nav.addEventListener('mouseover', handleHover.bind(0.5));
+  nav.addEventListener('mouseout', handleHover.bind(1));
+  ```
+
+  
 
 ## Object Reference vs Values
 
