@@ -124,6 +124,11 @@ Closures are the ability for an inner function to access variables from a higher
 - query selector finds children no matter how deep in the DOM tree
 - the closest method finds parent no matter how far up the DOM tree
 
+### Changing Styles
+
+- `domElement.classList.toggle('class', condition)`
+  - If the condition is included, turns the toggle into a one way-only operation.   If set to `false`, then `class` will *only* be removed, but not added. If set to `true`, then `class` will *only* be added, but not removed.    
+
 ### Event Listeners
 
 > Go get something, listen for something, then go do something.
@@ -173,6 +178,48 @@ btn.addEventListener('click', function() {
   ```
 
   
+
+### The Intersection Observer API
+
+``` javascript
+const header = document.querySelector('.header');
+
+const stickyNav = function (entries) {
+  const [entry] = entries;
+  console.log(entry);
+  // if (!entry.isIntersecting) nav.classList.add('sticky');
+  // else nav.classList.remove('sticky');
+  nav.classList.toggle('sticky', !entry.isIntersecting);
+};
+
+const headerObserver = new IntersectionObserver(stickyNav, {
+  root: null,
+  // When 0% of the header is visible, then we want something to happen
+  threshold: 0,
+  rootMargin: '-90px',
+});
+
+headerObserver.observe(header);
+```
+
+#### Trying to break down what the heck is happening above for my future self.
+
+1. In this case, we are observing the `header` element which ends up being our target element.
+2. We created a new observer API when we declared the headerObserver variable and call the observe() method on it so that we can observe our target element - the header element.
+   - Its first parameter is a callback function, the observer callback, the function we will call when the observer threshold is reached.
+   - Its second parameter is an object known as observer options. 
+     - `root` is the element that we want the target to intersect
+       - We can select an element or write null (default) which means we will be able to observe our target element intersecting the entire viewport, the entire rectangle which shows the current portion of the page that is visible to the user. 
+     - `threshold` is the percentage of intersection at which the observer callback will be called.
+       - so if `threshold` was set to 0.1 (10%), the callback function would be called each time the observe element, the target element, is intersecting the root element (our viewport) at the threshold (10%) - no matter if we are scrolling up or down
+       - The default is 0 (meaning as soon as even one pixel is visible, the callback will be run AND each time the target element moves completely out of the view
+       - A threshold of 1.0 means that when 100% of the target is visible within the element specified by the `root` option, the callback is invoked.
+     - `rootMargin` is used to offset the intersection root's bounding box to create the final intersection root bounds. 
+       - in this case, we used the height of the navbar to move intersection root bounds up by `-90px`
+3. Our observer callback function has two arguments.
+   - entries
+     - an array of the threshold entries (above we only have one, but sometimes could have multiple)
+   - observer object 
 
 ## Object Reference vs Values
 

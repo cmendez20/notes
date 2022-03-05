@@ -1,4 +1,4 @@
-# Git it?
+Git it?
 
 ## How to Rename the master branch to main in Git
 
@@ -77,9 +77,16 @@ One thing to keep in mind, though, is your toolchain: if you're using a CI/CD to
 
 ## Using the Amend Command
 
+```bash
 git add changelog.md
 
-git commit - -amend - -no-edit
+git commit --amend --no-edit
+# done. can push to origin like normal. Otherwise, run the following command below:
 
 git push -f origin main
+```
+
+
+
+
 
