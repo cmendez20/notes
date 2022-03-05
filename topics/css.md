@@ -16,8 +16,8 @@ FONT SIZE SYSTEM (px)
 */
 
 *,
-*::before,
-*::after {
+*:before,
+*:after {
   margin: 0;
   padding: 0;
   box-sizing: inherit; 
@@ -139,6 +139,14 @@ h1 {
   font-size: clamp(1.5rem, 5vw, 3rem);
 }
 ```
+
+### Outline Color for Layout Issues
+
+```css
+* { Background: rgba(255,0,0,0.1); }
+```
+
+- This adds a red transparency that turns darker the more layers there are,it helps knowing where things begin and end and where they layer.
 
 ## CSS Properties
 
