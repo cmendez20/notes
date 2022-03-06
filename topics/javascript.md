@@ -13,6 +13,50 @@ const section1 = document.querySelector('#section--1');
 section1.scrollIntoView({behavior: 'smooth'});
 ```
 
+#### Lazy Loading Images
+
+**HTML**
+
+```html
+<img
+    <!-- Use low-res image for src, then load high-res image with javascript using the data-src -->
+	src="img/digital-lazy.jpg"
+	data-src="img/digital.jpg"
+	alt="Computer"
+	class="features__img lazy-img"
+/>
+```
+
+**JavaScript**
+
+```javascript
+// Lazy Loading Images - great for performance
+const imgTargets = document.querySelectorAll('img[data-src]');
+
+const loadImg = function (entries, observer) {
+  const [entry] = entries;
+  console.log(entry);
+
+  if (!entry.isIntersecting) return;
+
+  // Replace src with data-src
+  entry.target.src = entry.target.dataset.src;
+  entry.target.addEventListener('load', function () {
+    entry.target.classList.remove('lazy-img');
+  });
+
+  observer.unobserve(entry.target);
+};
+
+const imgObserver = new IntersectionObserver(loadImg, {
+  root: null,
+  threshold: 0,
+  rootMargin: '200px',
+});
+
+imgTargets.forEach(img => imgObserver.observe(img));
+```
+
 ## Paradigms
 
 - An approach and mindset of structuring code, which will direct your coding style and technique
