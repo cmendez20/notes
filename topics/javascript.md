@@ -357,3 +357,44 @@ A nested for loop for creating a 2D array is like the formula for finding the ar
 - DOM !== JAVASCRIPT
 
 DOM Methods and Properties for DOM Manipulation are apart of WEB APIs - libraries that browsers implement and that we can interact through JavaScript code.
+
+## Object-Oriented Programming
+
+```javascript
+// class declaration
+class PersonCl {
+  constructor(firstName, birthYear) {
+    this.firstName = firstName;
+    this.birthYear = birthYear;
+  }
+
+  calcAge() {
+    console.log(2037 - this.birthYear);
+  }
+    
+  // same as doing:
+  // PersonCl.prototype.greet = function () {
+  //   console.log(`Hey ${this.firstName`);
+  //	}
+}
+```
+
+- classes are ES6 way to create prototypes
+  - when declaring methods outside of the constructor function, class automatically adds them to the .prototype property
+    - this is the prototype of the objects created by the `PersonCl` class
+
+### Some Points about Classes
+
+- convention says to start classes with a Capital letter
+
+1. Classes are NOT hoisted
+
+   1. remember: function declarations are hoisted, but not classes
+
+2. Classes are first-class citizens
+
+   1. We can pass them into functions and return them from functions
+
+3. Classes are executed in strict mode
+
+   
