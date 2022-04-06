@@ -390,11 +390,18 @@ class PersonCl {
 1. Classes are NOT hoisted
 
    1. remember: function declarations are hoisted, but not classes
-
 2. Classes are first-class citizens
 
    1. We can pass them into functions and return them from functions
-
 3. Classes are executed in strict mode
 
-   
+## Async JS
+
+### Promises
+
+- a promise is an object that is used as a placeholder for the future result of an asynchronous operation
+  - a container for an asynchronously delivered value
+    - a container for a future value 
+    - example of future value: response from ajax call
+- we no longer need to rely on events and callbacks passed into asynchronous functions to handle asynchronous results;
+- instead of nesting callbacks, we can **chain promises** for a sequence of asynchronous operations: **escaping callback hell**
