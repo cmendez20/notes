@@ -405,3 +405,11 @@ class PersonCl {
     - example of future value: response from ajax call
 - we no longer need to rely on events and callbacks passed into asynchronous functions to handle asynchronous results;
 - instead of nesting callbacks, we can **chain promises** for a sequence of asynchronous operations: **escaping callback hell**
+
+#### Consuming Promises
+
+1. fetch data
+2. get response which will be transform to json
+3. take that data and render data to the dom
+
+- Always return the promise and then handle it outside by simply continuing the chain
