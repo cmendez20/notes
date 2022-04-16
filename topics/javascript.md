@@ -413,3 +413,7 @@ class PersonCl {
 3. take that data and render data to the dom
 
 - Always return the promise and then handle it outside by simply continuing the chain
+
+#### Building Promises
+
+- Called Promisifying - means to convert callback-based asynchronous behavior to promise base 
